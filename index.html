@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <center>
+            <h2>Palindrome Checker</h2>
+            <input type="text" id="myid" placeholder="Enter text">
+            <button onclick="check()">Check</button>
+            <div id="result">
+
+            </div>
+        </center>
+    </div>
+
+
+
+
+    <script>
+        function check(){
+        let text = document.getElementById("myid").value;
+         let a=text.toLowerCase();
+         let tt = a.replace(/\s+/g, '');//space reduction
+        let arr=tt.split("");//convert to array
+        let rev=arr.reverse();
+        let join = rev.join("");
+        console.log(a);
+        console.log(tt);
+        console.log(arr);
+        console.log(rev);
+        console.log(join);
+        console.log(text);
+
+         if(tt == join){
+            document.querySelector("#result")
+       result.innerHTML=" The given data is Palindrome";
+         }
+         else{
+         document.querySelector("#result");
+        result.innerHTML=" The given data is not a Palindrome";
+     }
+
+
+         }
+    </script>
+</body>
+</html>

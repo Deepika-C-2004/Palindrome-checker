@@ -1,0 +1,21 @@
+
+
+
+
+#wrapper{
+    border: 2px solid black;
+    padding: 50px;
+    margin: 50px auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: darksalmon;
+}
+#myid{
+    display: block;
+    margin: 50px;
+    height: 30px;
+}
+#result{
+    margin: 20px;
+}
